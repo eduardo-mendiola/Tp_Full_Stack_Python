@@ -1,0 +1,17 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  /* Colores */
+  --Negro: rgb(34, 34, 34);
+  --Blaco: rgb(255, 255, 255);
+  --Gris: rgb(100, 100, 100);
+  --Alternativo: rgb(255, 140, 140);
+}
+
+.promo-bar {
+  background-color: var(--Negro);
+}
