@@ -13,30 +13,168 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
-  </head>
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+</head>
+
 
 <body>
   <header class="header">
-    <div class="promo-bar">
-      <a class="promo-bar__link">Oferta del 30%</a>
+
+    <a href="#" class="header-promo">
+      <div class="header-promo__link" role="Alert promo">
+        Ofertas de hasta el 30%
+      </div>
+    </a>
+    
+    <div class="header-search">
+      <a class="header-search__logo-link" href="#">
+        <img class="header-search__logo-img" src="img/logo.png" alt="logo">
+      </a>
+
+      <form class="header-form" name="header-form" action="#" method="post" role="search">
+        <input class="header-form__search-box" type="search" placeholder="Encuentra lo que necesitas">
+        <button class="header-form__submit" type="submit">
+          <img class="header-form__icon" src="img/icons/icons8-lupa-50.png" alt="search">
+        </button>
+      </form>
+
+      <div class="login">
+        <a class="btn-login" href="#">
+          <img class="btn-login__img" src="img/icons/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          <span class="btn-login__text">Login</span>
+        </a>
+      </div>
+
     </div>
-    <nav class="menu__nav">
-      <ul class="menu__list">
-        <li class="menu__item"><a href="" class="menu__link">BICICLETAS</a></li>
-        <li class="menu__item"><a href="" class="menu__link">eBIKES</a></li>
-        <li class="menu__item"><a href="" class="menu__link">EQUIPAMIENTO</a></li>
-        <li class="menu__item"><a href="" class="menu__link">USADAS</a></li>
-        <li class="menu__item"><a href="" class="menu__link">HISTORIA</a></li>
-        <li class="menu__item"><a href="" class="menu__link">CONTACTO</a></li>
+
+    <nav class="nav">
+      <ul class="menu">
+        <li class="menu__item"><a href="#" class="menu__link" data-target="bikes">BICICLETAS</a></li>
+        <li class="menu__item"><a href="#" class="menu__link" data-target="ebikes">eBIKES</a></li>
+        <li class="menu__item"><a href="#" class="menu__link" data-target="components">COMPONENTES</a></li>
+        <li class="menu__item"><a href="#" class="menu__link" data-target="equipment">EQUIPAMIENTO</a></li>
+        <li class="menu__item"><a href="#" class="menu__link" data-target="used">USADAS</a></li>
+        <li class="menu__item"><a href="#" class="menu__link" data-target="outlet">OUTLET</a></li>
+        <li class="menu__item"><a href="#" class="menu__link" data-target="services">SERVICIOS</a></li>
       </ul>
     </nav>
+
+    <div class="options" id="bikes">
+      <h2 class="options-h2">BICICLETAS</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="#" class="options__link">Modelo1</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo2</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo3</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo4</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo5</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo6</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo7</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo8</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo9</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo10</a></li>
+      </ul>
+    </div>
+    <div class="options" id="ebikes">
+      <h2 class="options-h2">eBIKES</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="#" class="options__link">Modelo1</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo2</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo3</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo4</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo5</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo6</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo7</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo8</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo9</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo10</a></li>
+      </ul>
+    </div>
+    <div class="options" id="components">
+      <h2 class="options-h2">COMPONENTES</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="#" class="options__link">Modelo1</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo2</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo3</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo4</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo5</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo6</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo7</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo8</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo9</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo10</a></li>
+      </ul>
+    </div>
+    <div class="options" id="equipment">
+      <h2 class="options-h2">EQUIPAMIENTO</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="#" class="options__link">Modelo1</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo2</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo3</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo4</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo5</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo6</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo7</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo8</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo9</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo10</a></li>
+      </ul>
+    </div>
+    <div class="options" id="used">
+      <h2 class="options-h2">USADAS</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="#" class="options__link">Modelo1</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo2</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo3</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo4</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo5</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo6</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo7</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo8</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo9</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo10</a></li>
+      </ul>
+    </div>
+    <div class="options" id="outlet">
+      <h2 class="options-h2">OUTLET</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="#" class="options__link">Modelo1</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo2</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo3</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo4</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo5</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo6</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo7</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo8</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo9</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo10</a></li>
+      </ul>
+    </div>
+    <div class="options" id="services">
+      <h2 class="options-h2">SERVICIOS</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="#" class="options__link">Modelo1</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo2</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo3</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo4</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo5</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo6</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo7</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo8</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo9</a></li>
+        <li class="options__item"><a href="#" class="options__link">Modelo10</a></li>
+      </ul>
+    </div> 
   </header>
 
-  <main>
+  <main class="main">
    
   </main>
 
-  <footer>
+  <footer class="footer">
 
   </footer>
 </body>
