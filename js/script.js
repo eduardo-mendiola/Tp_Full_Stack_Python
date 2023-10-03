@@ -38,48 +38,48 @@ opciones.forEach((opcion) => {
 
 
 
-var theToggle = document.querySelector('.menu-toggle');
+// menu burger
+const menuToggle = document.getElementById("menuToggle");
+const navBurguer = document.getElementById("nav-burger");
+const navDesktop = document.getElementById("nav-desktop");
 
-// based on Todd Motto functions
-// https://toddmotto.com/labs/reusable-js/
+menuToggle.addEventListener("click", () => {
+    navBurguer.style.display = navBurguer.style.display === "block" ? "none" : "block";
+});
 
-// hasClass
-function hasClass(elem, className) {
-	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-}
-// addClass
-function addClass(elem, className) {
-    if (!hasClass(elem, className)) {
-    	elem.className += ' ' + className;
-    }
-}
-// removeClass
-function removeClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
-	if (hasClass(elem, className)) {
-        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
-            newClass = newClass.replace(' ' + className + ' ', ' ');
-        }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    }
-}
-// toggleClass
-function toggleClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
-    if (hasClass(elem, className)) {
-        while (newClass.indexOf(" " + className + " ") >= 0 ) {
-            newClass = newClass.replace( " " + className + " " , " " );
-        }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+// Lo mismo que mas arriba pero mas desarrollado
+// menuToggle.addEventListener("click", () => {
+//     // Toggle para mostrar u ocultar el menú hamburguesa cuando se hace clic en él
+//     if (navBurguer.style.display === "flex") {
+//         navBurguer.style.display = "none";
+//     } else {
+//         navBurguer.style.display = "flex";
+//     }
+// });
+
+//fin
+
+// cambio de nav
+
+function toggleMenu() {
+    if (window.innerWidth <= 910) {
+        // Si la pantalla es pequeña, muestra el menú hamburguesa y oculta el menú normal
+        navDesktop.style.display = "none";
+        menuToggle.style.display = "flex";
     } else {
-        elem.className += ' ' + className;
+        // Si la pantalla es grande, muestra el menú normal y oculta el menú hamburguesa
+        navDesktop.style.display = "flex";
+        navBurguer.style.display = "none";
+        menuToggle.style.display = "none";
+        
     }
 }
 
-theToggle.onclick = function() {
-   toggleClass(this, 'on');
-   return false;
-}
+// Ejecuta la función al cargar la página y cuando cambia el tamaño de la ventana
+toggleMenu();
+window.addEventListener("resize", toggleMenu);
 
+
+// fin
 
 
