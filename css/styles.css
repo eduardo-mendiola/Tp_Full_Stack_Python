@@ -338,7 +338,7 @@
 
 
 
-/* Estilos para la pantalla pequeña (< 800px) */
+/* Estilos para la pantalla mediana (< 926px) */
 @media screen and (max-width: 926px) {
   .header-search {
     width: 100vw;
@@ -465,8 +465,114 @@
 
 }  
 
-/* Fin de media queries */
+/* Fin de media queries pantalla mediana 926px */
 
+
+/* Estilos para la pantalla pequeña (< 750px) */
+@media screen and (max-width: 725px) {
+  .header-search {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+  }
+
+  .header-search__logo-img {
+    height: 1.7rem;
+  }
+
+  .header-promo__link {
+    font-size: 0.8rem;
+  }
+  
+
+    /* Footer */
+  .footer {
+    width: 100%;
+    height: 400px;
+  }
+
+  .footer-info {
+    height: 80%;
+    padding: 10px 10px;
+
+  }
+
+  .info__title {
+    font-size: 0.45rem;
+    margin-top: 0.5rem;
+  }
+
+  .info-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.38rem;
+    gap: 0.1rem;
+  }
+
+  .info-list__li {
+    margin-bottom: .1rem;
+  }
+
+  .info-list__link {
+    font-size: 0.4rem;
+  }
+
+
+  .info-list--social {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.8rem;
+  }
+
+  .info-list--payment {
+    flex-direction: row;
+    margin-left: 0.2rem;
+  }
+
+  .social-media-icons {
+    height: 0.8rem;
+  }
+
+  .customer-care {
+    margin-left: 0.2rem;
+    gap: 0.1rem;
+  }
+
+  .customer-care__phone {
+    font-size: 0.6rem;
+    font-weight: 500;
+  }
+
+  .customer-care__schedule {
+    font-size: .5rem;
+  }
+  .customer-care__email {
+    font-size: 0.6rem;
+  }
+
+  .legal {
+    gap: 0.6rem;
+    height: 20%;
+  }
+
+  .legal__links {  
+    gap: 0.4rem;
+  }
+
+  .legal__h5 {
+    font-size: 0.36rem;
+  }
+
+  .legal__h6 {
+    font-size: 0.38rem;
+  }
+
+}  
+
+/* Fin de media queries */
 
 .small-screen {
   display: none;
