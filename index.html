@@ -30,57 +30,89 @@
       </div>
     </a>
     
+    <!-- Inicio pantalla grande -->
+    <div class="large-screen" id="largeScreen">
+      <div class="header-search">
+        <a class="header-search__logo-link" href="#">
+          <img class="header-search__logo-img" src="img/logo.png" alt="logo">
+        </a>
+
+        <form class="header-form" name="header-form" action="#" method="post" role="search">
+          <input class="header-form__search-box" type="search" placeholder="Encuentra lo que necesitas">
+          <button class="header-form__submit" type="submit">
+            <img class="header-form__icon" src="img/icons/icons8-lupa-50.png" alt="search">
+          </button>
+        </form>
+
+        <div class="login">
+          <a class="btn-login" href="#">
+            <img class="btn-login__img" src="img/icons/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <span class="btn-login__text">Login</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav-desktop" id="nav-desktop">
+        <ul class="menu-desktop">
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="bikes">BICICLETAS</a></li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="ebikes">eBIKES</a></li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="components">COMPONENTES</a></li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="equipment">EQUIPAMIENTO</a></li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="used">USADAS</a></li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="outlet">OUTLET</a></li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="services">SERVICIOS</a></li>
+        </ul>
+      </nav>
+  </div>
+
+  <!-- Fin de pantalla grande -->
+
+  <!-- Inicio pantalla pequeña -->
+
+  <div class="small-screen" id="smallScreen">
     <div class="header-search">
+      <div class="menu-toggle" id="menuToggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
       <a class="header-search__logo-link" href="#">
         <img class="header-search__logo-img" src="img/logo.png" alt="logo">
       </a>
 
-      <form class="header-form" name="header-form" action="#" method="post" role="search">
-        <input class="header-form__search-box" type="search" placeholder="Encuentra lo que necesitas">
-        <button class="header-form__submit" type="submit">
+     
+      <div class="header-search__right">
+        <a class="header-form__submit">
           <img class="header-form__icon" src="img/icons/icons8-lupa-50.png" alt="search">
-        </button>
-      </form>
-
-      <div class="login">
-        <a class="btn-login" href="#">
-          <img class="btn-login__img" src="img/icons/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-          <span class="btn-login__text">Login</span>
         </a>
+        
+        <div class="login">
+          <a class="btn-login" href="#">
+            <img class="btn-login__img" src="img/icons/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+          </a>
+        </div>  
       </div>
-
+      
     </div>
 
-    <nav class="nav-desktop" id="nav-desktop">
-      <ul class="menu-desktop">
-        <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="bikes">BICICLETAS</a></li>
-        <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="ebikes">eBIKES</a></li>
-        <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="components">COMPONENTES</a></li>
-        <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="equipment">EQUIPAMIENTO</a></li>
-        <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="used">USADAS</a></li>
-        <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="outlet">OUTLET</a></li>
-        <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="services">SERVICIOS</a></li>
-      </ul>
-    </nav>
 
+   
 
-    <div class="menu-toggle" id="menuToggle">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-
-    <nav class="nav-burger" id="nav-burger">
-      <ul class="menu-burger">
-        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="bikes">BICICLETAS</a></li>
-        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="ebikes">eBIKES</a></li>
-        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="components">COMPONENTES</a></li>
-        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="equipment">EQUIPAMIENTO</a></li>
-        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="used">USADAS</a></li>
-        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="outlet">OUTLET</a></li>
-        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="services">SERVICIOS</a></li>
-      </ul>
-    </nav>
+   
+  </div>
+  <nav class="nav-burger" id="navBurger">
+    <ul class="menu-burger">
+      <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="bikes">BICICLETAS</a></li>
+      <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="ebikes">eBIKES</a></li>
+      <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="components">COMPONENTES</a></li>
+      <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="equipment">EQUIPAMIENTO</a></li>
+      <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="used">USADAS</a></li>
+      <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="outlet">OUTLET</a></li>
+      <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="services">SERVICIOS</a></li>
+    </ul>
+  </nav>
+<!-- Fin de pantalla pequeña -->
 
     <div class="options" id="bikes">
       <h2 class="options-h2">BICICLETAS</h2>
@@ -205,7 +237,7 @@
         <h3 class="info__title">Servicios</h3>
         <ul class="info-list">
           <li class="info-list__li"><a class="info-list__link" href="#">Cita previa Taller</a></li>
-          <li class="info-list__li"><a class="info-list__link" href="#">Test personalizado eBikes</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="#">Test personalizado</a></li>
           <li class="info-list__li"><a class="info-list__link" href="#">Financia tus compras</a></li>
           <li class="info-list__li"><a class="info-list__link" href="#">Retiro gratis en tiendas</a></li>
         </ul>
@@ -237,7 +269,8 @@
           <li class="info-list__li"><img class="social-media-icons" src="img/icons/pagoFacil.svg" alt=""></li>
         </ul>
       </div>
-      <div class="shipping">
+      <div class="customer-service">
+        <div class="customer-container">
         <h3 class="info__title">Atención al cliente</h3>
         <div class="customer-care">
           <p class="customer-care__phone">0800 999 0000</p>
@@ -245,6 +278,7 @@
           <p class="customer-care__schedule">SA de 9:00 a 13:00</p>
           <p class="customer-care__email">contacto@bicitienda.com.ar</p>
         </div>
+      </div>
       </div>
     </section>
     <section class="legal">

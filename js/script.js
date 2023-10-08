@@ -1,10 +1,13 @@
 const elementosMenu = document.querySelectorAll('.menu-desktop__link');
+const elementosMenuBurger = document.querySelectorAll('.menu-burger__link');
 const opciones = document.querySelectorAll('.options');
+
+console.log(elementosMenuBurger);
 
 function mostrarOpciones(id) {
   opciones.forEach((opcion) => {
     if (opcion.id === id) {
-      opcion.style.display = 'grid';
+      opcion.style.display = 'flex';
     } else {
       opcion.style.display = 'none';
     }
@@ -17,12 +20,23 @@ function ocultarOpciones() {
   });
 }
 
+
 elementosMenu.forEach((elemento) => {
   elemento.addEventListener('mouseover', (event) => {
     const targetId = event.currentTarget.getAttribute('data-target');
     mostrarOpciones(targetId);
   });
 });
+
+elementosMenuBurger.forEach((elemento) => {
+  elemento.addEventListener('click', (event) => {
+    const targetId = event.currentTarget.getAttribute('data-target');
+    mostrarOpciones(targetId);
+    console.log(targetId);
+  });
+});
+
+
 
 opciones.forEach((opcion) => {
   opcion.addEventListener('mouseleave', () => {
@@ -39,12 +53,13 @@ opciones.forEach((opcion) => {
 
 
 // menu burger
+const smallScreen = document.getElementById("smallScreen");
+const largeScreen = document.getElementById("largeScreen");
 const menuToggle = document.getElementById("menuToggle");
-const navBurguer = document.getElementById("nav-burger");
-const navDesktop = document.getElementById("nav-desktop");
+const navBurger = document.getElementById("navBurger");
 
 menuToggle.addEventListener("click", () => {
-    navBurguer.style.display = navBurguer.style.display === "block" ? "none" : "block";
+    navBurger.style.display = navBurger.style.display === "flex" ? "none" : "flex";
 });
 
 // Lo mismo que mas arriba pero mas desarrollado
@@ -62,15 +77,15 @@ menuToggle.addEventListener("click", () => {
 // cambio de nav
 
 function toggleMenu() {
-    if (window.innerWidth <= 910) {
+    if (window.innerWidth <= 926) {
         // Si la pantalla es pequeña, muestra el menú hamburguesa y oculta el menú normal
-        navDesktop.style.display = "none";
-        menuToggle.style.display = "flex";
+        largeScreen.style.display = "none";
+        smallScreen.style.display = "flex";
     } else {
         // Si la pantalla es grande, muestra el menú normal y oculta el menú hamburguesa
-        navDesktop.style.display = "flex";
-        navBurguer.style.display = "none";
-        menuToggle.style.display = "none";
+        largeScreen.style.display = "flex";
+        smallScreen.style.display = "none";
+        navBurger.style.display = "none";
         
     }
 }
