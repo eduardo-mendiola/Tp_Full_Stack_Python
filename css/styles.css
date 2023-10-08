@@ -437,7 +437,7 @@
 
     /* Opciones menu */
   .options {
-    display: flex;
+    display: none;
     flex-direction: column;
     max-height: 250px;
     padding: 1rem;
