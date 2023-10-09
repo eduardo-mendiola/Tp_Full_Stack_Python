@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style-type: none;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 :root{
@@ -32,6 +33,7 @@
   top: 0;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 .header-promo {
@@ -202,10 +204,80 @@
 
 /* Main */
 .main {
+  display: flex;
+  flex-direction: column;
   background-color: var(--Blaco);
-  width: 100%;
-  height: 800px;
+  width: inherit;
+  height: auto;
+  margin-top: 120px;
 }
+
+.catalogo {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Blaco);
+  width: inherit;
+  height: auto;
+  padding: 20px;
+  font-size: 1rem;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-product {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cards-product h1 {
+  font-size: 2rem; 
+  margin-bottom: 20px;
+}
+
+.cards-product h2 {
+  margin-top: 30px;
+}
+
+.cards-product p {
+  max-width: 250px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+.cards-product img {
+  max-width: 250px; 
+  height: auto; 
+  margin-bottom: 10px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.cards-product img:hover{
+  transform: scale(1.2);
+}
+
+.cards-product section {
+  text-align: center;
+  align-items: center;
+  width: 200;
+}
+
+.cards-product {
+  display: flex;
+  justify-content: space-evenly;
+  height: 80%;
+  padding: 15px 10px;
+}
+
+
+
 
 /* Footer */
 .footer {
@@ -468,7 +540,7 @@
 /* Fin de media queries pantalla mediana 926px */
 
 
-/* Estilos para la pantalla pequeña (< 750px) */
+/* Estilos para la pantalla pequeña (< 725px) */
 @media screen and (max-width: 725px) {
   .header-search {
     width: 100vw;
@@ -572,7 +644,9 @@
 
 }  
 
-/* Fin de media queries */
+/* Fin de media queries para pantallas menores a 725px*/
+
+
 
 .small-screen {
   display: none;

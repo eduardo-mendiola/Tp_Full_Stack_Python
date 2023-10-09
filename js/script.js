@@ -1,3 +1,4 @@
+//INICIO SUBMENU
 const elementosMenu = document.querySelectorAll('.menu-desktop__link');
 const elementosMenuBurger = document.querySelectorAll('.menu-burger__link');
 const opciones = document.querySelectorAll('.options');
@@ -43,16 +44,10 @@ opciones.forEach((opcion) => {
     ocultarOpciones();
   });
 });
+// FIN SUBMENU
 
 
-
-
-
-
-
-
-
-// menu burger
+// INICIO MENU BURGER
 const smallScreen = document.getElementById("smallScreen");
 const largeScreen = document.getElementById("largeScreen");
 const menuToggle = document.getElementById("menuToggle");
@@ -72,9 +67,9 @@ menuToggle.addEventListener("click", () => {
 //     }
 // });
 
-//fin
+// FIN MENU BURGER
 
-// cambio de nav
+// INICIO CAMBIO NAV
 
 function toggleMenu() {
     if (window.innerWidth <= 926) {
@@ -95,6 +90,32 @@ toggleMenu();
 window.addEventListener("resize", toggleMenu);
 
 
-// fin
+// FIN CAMBIO NAV
 
 
+// INICIO DESPLAZAMIENTO LINKS
+
+const scrollLinks = document.querySelectorAll('.options__link');// href de los a del nav
+// const optionsMenu = document.getElementById(".options");
+scrollLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const targetId = link.getAttribute('href').substring(1); // Obtengo la ID del objetivo sin el símbolo "#"
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = 120; // AjustO esto según la altura de tu barra de navegación.
+      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+      navBurger.style.display = "none";
+      ocultarOpciones();
+    }
+  });
+});
+
+// FIN DESPLAZAMIENTO LINKS
