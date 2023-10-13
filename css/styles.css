@@ -13,6 +13,7 @@
   --Negro: rgb(34, 34, 34);
   --Blaco: rgb(255, 255, 255);
   --BlacoH: rgb(255 255 255 / 95%);
+  --BlacoH2: rgba(255,255,255,0.95);
   --Gris: rgb(100, 100, 100);
   --GrisTwo: rgb(50, 50, 50); 
   --Alternativo: rgb(255, 140, 140);
@@ -513,7 +514,7 @@
     flex-direction: column;
     max-height: 250px;
     padding: 1rem;
-    background-color: var(--BlacoH);
+    background-color: var(--BlacoH2);
   }
 
   .options-menu {
@@ -531,7 +532,7 @@
   }
 
   .options__link {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
 }  
@@ -643,7 +644,7 @@
 
 }  
 
-/* Fin de media queries para pantallas menores a 725px*/
+/* Fin de media queries para pantallas pequenas < 725px*/
 
 
 
