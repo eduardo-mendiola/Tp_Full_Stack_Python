@@ -95,7 +95,8 @@ window.addEventListener("resize", toggleMenu);
 
 // INICIO DESPLAZAMIENTO LINKS
 
-const scrollLinks = document.querySelectorAll('.options__link');// href de los a del nav
+const scrollLinks = document.querySelectorAll('.link-scroll');// href de los a del nav
+
 // const optionsMenu = document.getElementById(".options");
 scrollLinks.forEach(link => {
   link.addEventListener('click', (e) => {
