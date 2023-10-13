@@ -36,13 +36,13 @@
         <a class="header-search__logo-link" href="index.html">
           <img class="header-search__logo-img" src="img/logo.png" alt="logo">
         </a>
-
-        <form class="header-form" name="header-form" action="#" method="post" role="search">
-          <input class="header-form__search-box" type="search" placeholder="Encuentra lo que necesitas">
-          <button class="header-form__submit" type="submit">
+        
+        <div class="header-form search-bar">
+          <input class="header-form__search-box" id="search-input" type="search" placeholder="Encuentra lo que necesitas">
+          <button class="header-form__submit" type="submit" onclick="searchProducts()">
             <img class="header-form__icon" src="img/icons/icons8-lupa-50.png" alt="search">
           </button>
-        </form>
+        </div>
 
         <div class="login">
           <a class="btn-login" href="#">

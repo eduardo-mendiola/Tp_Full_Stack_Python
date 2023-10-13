@@ -120,3 +120,97 @@ scrollLinks.forEach(link => {
 });
 
 // FIN DESPLAZAMIENTO LINKS
+
+
+// INICIO BARRA DE BUSQUEDA Opcion 1
+
+// document.getElementById("search-input").addEventListener("keypress", function(event) {
+//   if (event.key === "Enter") {
+//     searchProducts();
+//   }
+// });
+
+// function searchProducts() {
+//   // Obtén el texto ingresado en la barra de búsqueda
+//   let searchTerm = document.getElementById("search-input").value.toLowerCase();
+
+//   // Obtén todos los elementos de productos
+//   let productContainers = document.querySelectorAll(".catalogo");
+
+//   productContainers.forEach(function (container) {
+//     let productCards = container.querySelectorAll(".cards-product .card");
+//     let sectionTitle = container.querySelector(".section-title");
+
+//     let atLeastOneVisible = false;
+
+//     productCards.forEach(function (card) {
+//       let productTitle = card.querySelector(".product-title").textContent.toLowerCase();
+//       let productDescription = card.querySelector(".product-description").textContent.toLowerCase();
+
+//       if (productTitle.includes(searchTerm) || productDescription.includes(searchTerm)) {
+//         card.style.display = "flex"; // Muestra el producto
+//         atLeastOneVisible = true;
+//       } else {
+//         card.style.display = "none"; // Oculta el producto
+//       }
+//     });
+
+//     // Oculta o muestra el título y el contenedor según los resultados de búsqueda
+//     if (atLeastOneVisible) {
+//       sectionTitle.style.display = "block";
+//       container.style.display = "block";
+//     } else {
+//       sectionTitle.style.display = "none";
+//       container.style.display = "none";
+//     }
+//   });
+// }
+
+// FIN BARRA DE BUSQUEDA opcion 2
+
+
+
+// INICIO BARRA DE BUSQUEDA Opcion 2
+document.getElementById("search-input").addEventListener("input", function() {
+  searchProducts();
+});
+
+function searchProducts() {
+  // Obtén el texto ingresado en la barra de búsqueda
+  let searchTerm = document.getElementById("search-input").value.toLowerCase();
+
+  // Obtén todos los elementos de productos
+  let productContainers = document.querySelectorAll(".catalogo");
+
+  productContainers.forEach(function (container) {
+    let productCards = container.querySelectorAll(".cards-product .card");
+    let sectionTitle = container.querySelector(".section-title");
+
+    let atLeastOneVisible = false;
+
+    productCards.forEach(function(card) {
+      let productTitle = card.querySelector(".product-title").textContent.toLowerCase();
+      let productDescription = card.querySelector(".product-description").textContent.toLowerCase();
+
+      if (productTitle.includes(searchTerm) || productDescription.includes(searchTerm)) {
+        card.style.display = "flex"; // Muestra el producto
+        atLeastOneVisible = true;
+      } else {
+        card.style.display = "none"; // Oculta el producto
+      }
+    });
+
+    // Oculta o muestra el título y el contenedor según los resultados de búsqueda
+    if (atLeastOneVisible) {
+      sectionTitle.style.display = "block";
+      container.style.display = "block";
+    } else {
+      sectionTitle.style.display = "none";
+      container.style.display = "none";
+    }
+  });
+}
+
+// FIN BARRA DE BUSQUEDA opcion 2
+
+
