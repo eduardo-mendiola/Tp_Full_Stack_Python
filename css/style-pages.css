@@ -100,7 +100,7 @@
 .mensaje-login {
   margin-top: 10px;
   font-size: .8rem;
-  color: var(alert);
+  color: var(--alert);
   text-align: center;
 }
 
