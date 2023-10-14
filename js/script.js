@@ -108,7 +108,7 @@ scrollLinks.forEach(link => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      const offset = 120; // AjustO esto según la altura de tu barra de navegación.
+      const offset = 120; // Ajusto esto según la altura de tu barra de navegación.
       const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
       
       window.scrollTo({
@@ -120,6 +120,8 @@ scrollLinks.forEach(link => {
     }
   });
 });
+
+
 
 // FIN DESPLAZAMIENTO LINKS
 
@@ -180,9 +182,6 @@ scrollLinks.forEach(link => {
 
 
 // INICIO BARRA DE BUSQUEDA Opcion 2
-// document.getElementById("search-input").addEventListener("input", function() {
-//   searchProducts();
-// });
 
 // Agregar eventos para ambas barras de búsqueda
 document.getElementById("search-input-1").addEventListener("input", function() {

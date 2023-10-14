@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Bicicletas</title>
+  <!-- Css -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- JavaScript  -->
+  <script src="../js/script.js" defer></script>
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon-16x16.png">
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+</head>
+
+
+<body>
+  <header class="header">
+
+    <a href="../index.html#outlet-mont" class="header-promo link-scroll-2">
+      <div class="header-promo__link" role="Alert promo">
+        Ofertas de hasta el 30%
+      </div>
+    </a>
+
+    <!-- Inicio pantalla grande -->
+    <div class="large-screen" id="largeScreen">
+      <div class="header-search">
+        <a class="header-search__logo-link" href="../index.html">
+          <img class="header-search__logo-img" src="../img/logo.png" alt="logo">
+        </a>
+        
+        <div></div>
+        <!-- <div class="header-form search-bar" id="search-bar-1">
+          <input class="header-form__search-box" id="search-input-1" type="search" placeholder="Encuentra lo que necesitas">
+          <button class="header-form__submit" type="submit" onclick="searchProducts()" >
+            <img class="header-form__icon" src="../img/icons/icons8-lupa-50.png" alt="search">
+          </button>
+        </div> -->
+
+        <div class="login">
+          <a class="btn-login" href="./login.html">
+            <img class="btn-login__img" src="../img/icons/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <span class="btn-login__text">Login</span>
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav-desktop" id="nav-desktop">
+        <ul class="menu-desktop">
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="bikes">BICICLETAS</a></li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="components">COMPONENTES</a>
+          </li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="equipment">EQUIPAMIENTO</a>
+          </li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="used">USADAS</a></li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="outlet">OUTLET</a></li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="services">SERVICIOS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Fin de pantalla grande -->
+
+
+
+    <!-- Inicio pantalla pequeña -->
+
+    <div class="small-screen" id="smallScreen">
+      <div class="header-search">
+        <div class="menu-toggle" id="menuToggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <a class="header-search__logo-link" href="../index.html">
+          <img class="header-search__logo-img" src="../img/logo.png" alt="logo">
+        </a>    
+        
+        <!-- <div class="header-search__right">
+          <a class="header-form__submit" id="searchIcon">
+            <img class="header-form__icon" src="../img/icons/icons8-lupa-50.png" alt="search">
+          </a>-->
+
+          <div class="login">
+            <a class="btn-login" href="./login.html">
+              <img class="btn-login__img" src="../img/icons/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- boton cerrar busqueda -->
+
+    <div class="search-2" id="search-bar-2">
+      <div class="header-form  search-input-2">
+        <input class="header-form__search-box" id="search-input-2" type="search" placeholder="Encuentra lo que necesitas">
+        <button class="header-form__submit" id="searchClose" type="submit" onclick="searchProducts()" >
+          <img class="header-form__icon" src="../img/icons/close-icon.png" alt="search">
+        </button>
+      </div>
+    </div>
+    
+
+    <nav class="nav-burger" id="navBurger">
+      <ul class="menu-burger">
+        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="bikes">BICICLETAS</a></li>
+        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="components">COMPONENTES</a>
+        </li>
+        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="equipment">EQUIPAMIENTO</a>
+        </li>
+        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="used">USADAS</a></li>
+        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="outlet">OUTLET</a></li>
+        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="services">SERVICIOS</a></li>
+        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="contactos">CONTANTOS</a></li>
+      </ul>
+    </nav>
+    <!-- Fin de pantalla pequeña -->
+
+    <!-- Inicio de submenu -->
+    <div class="options" id="bikes">
+      <h2 class="options-h2">BICICLETAS</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="../index.html#montanas" class="options__link link-scroll-2">Montaña</a></li>
+        <li class="options__item"><a href="../index.html#urbanas" class="options__link link-scroll-2">Urbanas</a></li>
+        <li class="options__item"><a href="../index.html#ebikes" class="options__link link-scroll-2">eBikes</a></li>
+        <li class="options__item"><a href="../index.html#kids" class="options__link link-scroll-2">Niños</a></li>
+      </ul>
+    </div>
+    <div class="options" id="components">
+      <h2 class="options-h2">COMPONENTES</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="../index.html#asientos" class="options__link link-scroll-2">Asientos</a></li>
+        <li class="options__item"><a href="../index.html#pedales" class="options__link link-scroll-2">Pedales</a></li>
+        <li class="options__item"><a href="../index.html#manubrios" class="options__link link-scroll-2">Manubrios</a></li>
+      </ul>
+    </div>
+    <div class="options" id="equipment">
+      <h2 class="options-h2">EQUIPAMIENTO</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="../index.html#cascos" class="options__link link-scroll-2">Cascos</a></li>
+        <li class="options__item"><a href="../index.html#luces" class="options__link link-scroll-2">Luces</a></li>
+        <li class="options__item"><a href="../index.html#computadoras" class="options__link link-scroll-2">Computadoras</a></li>
+      </ul>
+    </div>
+    <div class="options" id="used">
+      <h2 class="options-h2">USADAS</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="../index.html#usadas-mont" class="options__link link-scroll-2">Usadas de Montaña</a></li>
+        <li class="options__item"><a href="../index.html#usadas-urb" class="options__link link-scroll-2">Usadas Urbanas</a></li>
+        <li class="options__item"><a href="../index.html#usadas-ebikes" class="options__link link-scroll-2">Usadas eBikes</a></li>
+        <li class="options__item"><a href="../index.html#usadas-kids" class="options__link link-scroll-2">Usadas Niños</a></li>
+      </ul>
+    </div>
+    <div class="options" id="outlet">
+      <h2 class="options-h2">OUTLET</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="../index.html#outlet-mont" class="options__link link-scroll-2">Bicicletas de Montaña</a></li>
+        <li class="options__item"><a href="../index.html#outlet-urb" class="options__link link-scroll-2">Bicicletas Urbanas</a></li>
+        <li class="options__item"><a href="../index.html#outlet-acce" class="options__link link-scroll-2">Accesorios</a></li>
+      </ul>
+    </div>
+    <div class="options" id="services">
+      <h2 class="options-h2">SERVICIOS</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="../index.html#servicios" class="options__link link-scroll-2">Servicio Técnico</a></li>
+        <li class="options__item"><a href="../index.html#serv-pers" class="options__link link-scroll-2">Personalización de bicicletas</a></li>
+        <li class="options__item"><a href="../index.html#serv-gome" class="options__link link-scroll-2">Gomería</a></li>
+      </ul>
+    </div>
+    <div class="options" id="contactos">
+      <h2 class="options-h2">CONTACTOS</h2>
+      <ul class="options-menu options-menu--bicicletas">
+        <li class="options__item"><a href="#footer" class="options__link link-scroll">Ayuda</a></li>
+        <li class="options__item"><a href="#footer" class="options__link link-scroll">Servicios Turnos</a></li>
+        <li class="options__item"><a href="#footer" class="options__link link-scroll">Sobre biciTienda</a></li>
+        <li class="options__item"><a href="#footer" class="options__link link-scroll">Redes Sociales</a></li>
+        <li class="options__item"><a href="#footer" class="options__link link-scroll">Teléfonos y mails</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- Fin de submenu -->
+
+
+  <main class="main">
+
+    <!-- INICIO DE CATALOGO DE PRODUCTOS Y SERVICIOS -->
+   
+    <h1 style="margin: 50px auto;">LOGIN EN CONSTRUCCIÓN</h1>
+    
+    <!-- FIN  DE CATALOGO DE PRODUCTOS Y SERVICIOS -->
+
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <section class="footer-info">
+      <div class="help">
+        <h3 class="info__title">Ayuda</h3>
+        <ul class="info-list">
+          <li class="info-list__li"><a class="info-list__link" href="./help.html">Atención al cliente</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="./faq.html">Preguntas frecuentes</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="./shipping.html">Envíos</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="./devoluciones.html">Devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="services">
+        <h3 class="info__title">Servicios</h3>
+        <ul class="info-list">
+          <li class="info-list__li"><a class="info-list__link" href="./cita.html">Cita previa Taller</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="./test.html">Test personalizado</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="./financiamiento.html">Financia tus compras</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="./retiro.html">Retiro gratis en tiendas</a></li>
+        </ul>
+      </div>
+      <div class="about">
+        <h3 class="info__title">Sobre biciTienda</h3>
+        <ul class="info-list">
+          <li class="info-list__li"><a class="info-list__link" href="./tiendas.html">Nuestras tiendas</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="./trabajo.html">Trabaja con nosotros</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="./contacto.html">Contacta con nosotros</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <h3 class="info__title">Síguenos en nuestras redes</h3>
+        <ul class="info-list info-list--social">
+          <li class="info-list__li"><a class="info-list__link" href="https://www.facebook.com/"><img class="social-media-icons"
+                src="../img/icons/facebook-f.svg" alt=""></a></li>
+          <li class="info-list__li"><a class="info-list__link" href="https://www.youtube.com/"><img class="social-media-icons"
+                src="../img/icons/youtube.svg" alt=""></a></li>
+          <li class="info-list__li"><a class="info-list__link" href="https://twitter.com/"><img class="social-media-icons"
+                src="../img/icons/x-twitter.svg" alt=""></a></li>
+          <li class="info-list__li"><a class="info-list__link" href="https://www.instagram.com/"><img class="social-media-icons"
+                src="../img/icons/instagram.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="payment">
+        <h3 class="info__title">Formas de pago</h3>
+        <ul class="info-list info-list--social info-list--payment">
+          <li class="info-list__li"><img class="social-media-icons" src="../img/icons/visa.svg" alt=""></li>
+          <li class="info-list__li"><img class="social-media-icons" src="../img/icons/master.svg" alt=""></li>
+          <li class="info-list__li"><img class="social-media-icons" src="../img/icons/paypal.svg" alt=""></li>
+          <li class="info-list__li"><img class="social-media-icons" src="../img/icons/mercado.svg" alt=""></li>
+          <li class="info-list__li"><img class="social-media-icons" src="../img/icons/pagoFacil.svg" alt=""></li>
+        </ul>
+      </div>
+      <div class="customer-service">
+        <div class="customer-container">
+          <h3 class="info__title">Atención al cliente</h3>
+          <div class="customer-care">
+            <p class="customer-care__phone">0800 999 0000</p>
+            <p class="customer-care__schedule">LU-VI de 09:00 a 18:00</p>
+            <p class="customer-care__schedule">SA de 9:00 a 13:00</p>
+            <p class="customer-care__email">contacto@bicitienda.com.ar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="legal">
+      <div class="legal__links">
+        <a href="./privacidad.html">
+          <h5 class="legal__h5">PRIVACIDAD</h5>
+        </a>
+        <a href="./legal.html">
+          <h5 class="legal__h5">TERMINOS & CONDICIONES DE COMPRA</h5>
+        </a>
+        <a href="./condiciones.html">
+          <h5 class="legal__h5">CONDICIONES DE USUARIO</h5>
+        </a>
+      </div>
+
+      <h6 class="legal__h6">
+        © 2023 biciTienda S.A. - Todos los derechos reservados.
+      </h6>
+    </section>
+  </footer>
+</body>
+
+</html>
