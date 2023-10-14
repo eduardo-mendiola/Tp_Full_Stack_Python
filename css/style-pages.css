@@ -1,3 +1,21 @@
+:root{
+  /* Colores */
+  --Negro: rgb(34, 34, 34);
+  --Blanco: rgb(255, 255, 255);
+  --BlancoH: rgb(255 255 255 / 95%);
+  --BlancoH2: rgba(255,255,255,0.95);
+  --Gris: rgb(100, 100, 100);
+  --GrisTwo: rgb(50, 50, 50); 
+  --GrisClaro: rgb(186, 186, 186); 
+  --Alternativo: rgb(255, 140, 140);
+  --Alternativo2: rgb(100, 100, 200);
+  --alert: rgb(237, 105, 105);
+
+  /* Fonts */
+  font-size: 20px;
+  font-family: 'Montserrat', Arial,Helvetica,sans-serif;
+}
+
 
 .container-login {
   width: 350px;
@@ -82,7 +100,7 @@
 .mensaje-login {
   margin-top: 10px;
   font-size: .8rem;
-  color: red;
+  color: var(alert);
   text-align: center;
 }
 
