@@ -11,11 +11,12 @@
 :root{
   /* Colores */
   --Negro: rgb(34, 34, 34);
-  --Blaco: rgb(255, 255, 255);
-  --BlacoH: rgb(255 255 255 / 95%);
-  --BlacoH2: rgba(255,255,255,0.95);
+  --Blanco: rgb(255, 255, 255);
+  --BlancoH: rgb(255 255 255 / 95%);
+  --BlancoH2: rgba(255,255,255,0.95);
   --Gris: rgb(100, 100, 100);
   --GrisTwo: rgb(50, 50, 50); 
+  --GrisClaro: rgb(186, 186, 186); 
   --Alternativo: rgb(255, 140, 140);
   --Alternativo2: rgb(100, 100, 200);
 
@@ -44,7 +45,7 @@
 
 .header-promo__link {
   background-color: var(--Negro);
-  color: var(--Blaco);
+  color: var(--Blanco);
   text-align: center;
   padding: 0.2rem;
   font-size: 0.9rem;
@@ -58,7 +59,7 @@
 }
 
 .header-search {
-  background-color: var(--Blaco);
+  background-color: var(--Blanco);
   display: grid;
   grid-template: 1fr / repeat(3, 1fr);
   justify-content: center;
@@ -94,7 +95,7 @@
 }
 
 .header-form__submit {
-  background-color: var(--Blaco); 
+  background-color: var(--Blanco); 
   border: none;
   margin-right: 5px;
   cursor: pointer;
@@ -116,7 +117,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--Blaco);
+  background-color: var(--Blanco);
   border: none;
   gap: .4rem;
   &:visited {
@@ -158,9 +159,9 @@
 
 
 .menu-desktop__link {
-  color: var(--Blaco);
+  color: var(--Blanco);
   &:visited {
-    color: var(--Blaco);
+    color: var(--Blanco);
   }
   &:hover {
     color: var(--Alternativo);
@@ -174,7 +175,7 @@
 /* Opciones menu */
 .options {
   display: none;
-  background-color: var(--Blaco);
+  background-color: var(--Blanco);
   max-height: 250px;
 }
 
@@ -207,7 +208,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  background-color: var(--Blaco);
+  background-color: var(--Blanco);
   width: inherit;
   height: auto;
   margin-top: 120px;
@@ -216,7 +217,7 @@
 .catalogo {
   display: flex;
   flex-direction: column;
-  background-color: var(--Blaco);
+  background-color: var(--Blanco);
   width: inherit;
   height: auto;
   padding: 20px;
@@ -340,7 +341,7 @@
 
 .info-list__link {
   font-size: 0.7rem;
-  color: var(--Blaco);
+  color: var(--Blanco);
 }
 
 
@@ -363,7 +364,7 @@
   flex-direction: column;
   margin-left: 0.2rem;
   gap: 0.1rem;
-  color: var(--Blaco);
+  color: var(--Blanco);
 }
 
 .customer-care__phone {
@@ -397,13 +398,13 @@
 
 .legal__h5 {
   font-size: 0.6rem;
-  color: var(--Blaco);
+  color: var(--Blanco);
 }
 
 .legal__h6 {
   font-size: 0.55rem;
   font-weight: 400;
-  color: var(--Blaco);
+  color: var(--Blanco);
 }
 
 
@@ -514,7 +515,7 @@
     flex-direction: column;
     max-height: 250px;
     padding: 1rem;
-    background-color: var(--BlacoH2);
+    background-color: var(--BlancoH2);
   }
 
   .options-menu {
@@ -675,7 +676,7 @@
 
 .menu-burger__link {
   font-size: 0.8rem;
-  color: var(--Blaco);
+  color: var(--Blanco);
   &:hover {
     color: var(--Alternativo);
   }
@@ -694,7 +695,7 @@
 
 .search-2 {
   display: none;
-  background-color: var(--BlacoH2);
+  background-color: var(--BlancoH2);
 }
 .search-input-2 {
   display: flex;
