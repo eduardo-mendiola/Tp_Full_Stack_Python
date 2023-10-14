@@ -37,9 +37,9 @@
           <img class="header-search__logo-img" src="img/logo.png" alt="logo">
         </a>
         
-        <div class="header-form search-bar">
-          <input class="header-form__search-box" id="search-input" type="search" placeholder="Encuentra lo que necesitas">
-          <button class="header-form__submit" type="submit" onclick="searchProducts()">
+        <div class="header-form search-bar" id="search-bar-1">
+          <input class="header-form__search-box" id="search-input-1" type="search" placeholder="Encuentra lo que necesitas">
+          <button class="header-form__submit" type="submit" onclick="searchProducts()" >
             <img class="header-form__icon" src="img/icons/icons8-lupa-50.png" alt="search">
           </button>
         </div>
@@ -69,6 +69,8 @@
 
     <!-- Fin de pantalla grande -->
 
+
+
     <!-- Inicio pantalla pequeña -->
 
     <div class="small-screen" id="smallScreen">
@@ -81,11 +83,10 @@
 
         <a class="header-search__logo-link" href="#">
           <img class="header-search__logo-img" src="img/logo.png" alt="logo">
-        </a>
-
-
+        </a>    
+        
         <div class="header-search__right">
-          <a class="header-form__submit">
+          <a class="header-form__submit" id="searchIcon">
             <img class="header-form__icon" src="img/icons/icons8-lupa-50.png" alt="search">
           </a>
 
@@ -94,13 +95,23 @@
               <img class="btn-login__img" src="img/icons/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </a>
           </div>
+
         </div>
-
       </div>
-
-
-
     </div>
+
+    <!-- boton cerrar busqueda -->
+
+    <div class="search-2" id="search-bar-2">
+      <div class="header-form  search-input-2">
+        <input class="header-form__search-box" id="search-input-2" type="search" placeholder="Encuentra lo que necesitas">
+        <button class="header-form__submit" id="searchClose" type="submit" onclick="searchProducts()" >
+          <img class="header-form__icon" src="img/icons/close-icon.png" alt="search">
+        </button>
+      </div>
+    </div>
+    
+
     <nav class="nav-burger" id="navBurger">
       <ul class="menu-burger">
         <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="bikes">BICICLETAS</a></li>

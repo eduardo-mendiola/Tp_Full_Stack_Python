@@ -52,6 +52,7 @@ const smallScreen = document.getElementById("smallScreen");
 const largeScreen = document.getElementById("largeScreen");
 const menuToggle = document.getElementById("menuToggle");
 const navBurger = document.getElementById("navBurger");
+const searchBarTwo = document.getElementById("search-bar-2");
 
 menuToggle.addEventListener("click", () => {
     navBurger.style.display = navBurger.style.display === "flex" ? "none" : "flex";
@@ -81,6 +82,7 @@ function toggleMenu() {
         largeScreen.style.display = "flex";
         smallScreen.style.display = "none";
         navBurger.style.display = "none";
+        searchBarTwo.style.display = "none";
         
     }
 }
@@ -170,14 +172,32 @@ scrollLinks.forEach(link => {
 
 
 
+
+
+
+
+
+
+
 // INICIO BARRA DE BUSQUEDA Opcion 2
-document.getElementById("search-input").addEventListener("input", function() {
-  searchProducts();
+// document.getElementById("search-input").addEventListener("input", function() {
+//   searchProducts();
+// });
+
+// Agregar eventos para ambas barras de búsqueda
+document.getElementById("search-input-1").addEventListener("input", function() {
+  searchProducts(1); // Llama a la función de búsqueda para la primera barra
 });
 
-function searchProducts() {
-  // Obtén el texto ingresado en la barra de búsqueda
-  let searchTerm = document.getElementById("search-input").value.toLowerCase();
+document.getElementById("search-input-2").addEventListener("input", function() {
+  searchProducts(2); // Llama a la función de búsqueda para la segunda barra
+});
+
+
+function searchProducts(searchInputId) {
+  // Obtiene el texto ingresado en la barra de búsqueda
+  let inputId = `search-input-${searchInputId}`;
+  let searchTerm = document.getElementById(inputId).value.toLowerCase();
 
   // Obtén todos los elementos de productos
   let productContainers = document.querySelectorAll(".catalogo");
@@ -214,3 +234,38 @@ function searchProducts() {
 // FIN BARRA DE BUSQUEDA opcion 2
 
 
+
+
+
+
+
+// INICIO BARRA DE BUSQUEDA PANTALLAS PEQUENAS
+
+// Elementos del DOM
+const searchIcon = document.getElementById("searchIcon");
+const searchInput = document.getElementById("search-bar-2");
+const searchClose = document.getElementById("searchClose");
+const searchTerm = document.getElementById("searchTerm");
+
+
+// Evento de clic en el ícono de búsqueda
+searchIcon.addEventListener("click", function () {
+  // Oculta .small-screen
+  smallScreen.style.display = "none";
+  // Muestra el campo de búsqueda y oculta otros elementos
+  searchInput.style.display = "flex";
+
+  // Evento de clic en el botón de cerrar
+  searchClose.addEventListener("click", function () {
+    // Oculta el campo de búsqueda y muestra .small-screen
+    searchInput.style.display = "none";
+    smallScreen.style.display = "flex";
+    searchTerm.value = ""; // Limpia el campo de búsqueda
+  });
+
+  // Enfoca automáticamente en el campo de búsqueda
+  searchTerm.focus();
+});
+
+
+// FIN BARRA DE BUSQUEDA PANTALLAS PEQUENAS

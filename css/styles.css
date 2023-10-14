@@ -692,6 +692,20 @@
 }
 
 
+.search-2 {
+  display: none;
+  background-color: var(--BlacoH2);
+}
+.search-input-2 {
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+
+
 
 
 
