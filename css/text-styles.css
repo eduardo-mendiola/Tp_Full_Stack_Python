@@ -1,4 +1,4 @@
-.faq-container {
+.container-text {
   display: flex;
   flex-direction: column;
   max-width: 800px;
@@ -6,24 +6,24 @@
   padding: 30px;
 }
 
-.faq-title {
+.h1-text {
   font-size: 30px;
   margin-bottom: 30px;
   color: var(--GrisTwo);
 }
 
-.faq-subtitle {
+.h2-text {
   font-size: 25px;
   margin-bottom: 15px;
   color: var(--GrisTwo);
 }
 
-.question {
+.h3-text {
   font-weight: bold;
   margin-bottom: 10px;
   color: var(--Gris);
 
 }
-.answer {
+.p-text {
   margin: 0 auto 20px 30px;
 }
