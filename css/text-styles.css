@@ -1,7 +1,3 @@
-* {
-  border: 1px solid slateblue;
-}
-
 .container-text {
   display: flex;
   flex-direction: column;
