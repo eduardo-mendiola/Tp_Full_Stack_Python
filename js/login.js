@@ -62,3 +62,7 @@ function ocultarPass() {
   document.getElementById("icon-eye").setAttribute("onclick","mostrarPass()")
 }
 
+ // Redirigir a la página de error (message.html)
+document.getElementById("continueButton").addEventListener("click", function() {
+  window.location.href = "./message.html";
+});

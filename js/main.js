@@ -272,21 +272,7 @@ searchIcon.addEventListener("click", function () {
 
 
 
-// detalles
-
-// document.querySelector('.card').addEventListener('click', function () {
-//   // Obtener los datos del producto
-//   const productData = {
-//     title: this.querySelector('.product-title').textContent,
-//     description: this.querySelector('.product-description').textContent,
-//     price: this.querySelector('.product-price').textContent,
-//     image: this.querySelector('img').src
-//   };
-
-//   // Codifica los datos del producto en un formato de cadena y redirige a detalles.html
-//   const productDataString = encodeURIComponent(JSON.stringify(productData));
-//   window.location.href = `pages/details.html?data=${productDataString}`;
-// });
+// INICIO DE SELECCION DE PRODUCTO PARA COMPRA
 
 // Obtén una lista de todos los elementos con la clase 'card'
 const cards = document.querySelectorAll('.card');
@@ -308,6 +294,6 @@ cards.forEach(card => {
   });
 });
 
-
+// FIN DE SELECCION DE PRODUCTO PARA COMPRA
 
 

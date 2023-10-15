@@ -55,4 +55,18 @@
     flex-direction: column;
     gap: 0;
   }
+
+  .container-description {
+    width: 360px;
+  }
+
+  .description-details {
+    font-size: 1rem;
+    width: 360px;
+  }
+
+  .img-details {
+    width: 360px;
+    height: auto;
+  }
 }
