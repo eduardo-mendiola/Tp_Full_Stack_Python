@@ -1,5 +1,18 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
 .form-card {
-  width: 350px;
+  width: 500px;
   height: auto;
   margin: 50px auto 100px;
   display: flex;
@@ -49,4 +62,10 @@
 
 .form-textarea {
   height: 100px;
+}
+
+@media screen and (max-width: 725px)  {
+  .form-card {
+    width: 320px;
+  }
 }
