@@ -258,12 +258,17 @@
   max-width: 250px; 
   height: auto; 
   margin-bottom: 10px;
-  transition: 0.5s;
   object-fit: cover;
+  border: 1px solid transparent;
+  transition: transform 0.6s ease;
 }
 
-.cards-product img:hover{
-  transform: scale(1.2);
+/* De esta forma solo se ejecuta en pantallas con cursor y no tactiles y evitamos malos funcionamientos */
+@media (hover: hover) {
+  .cards-product img:hover{
+    transform: scale(1.3);
+    border-width: 18px;
+  }
 }
 
 .cards-product section {
