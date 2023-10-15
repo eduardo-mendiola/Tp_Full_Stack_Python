@@ -268,3 +268,46 @@ searchIcon.addEventListener("click", function () {
 
 
 // FIN BARRA DE BUSQUEDA PANTALLAS PEQUENAS
+
+
+
+
+// detalles
+
+// document.querySelector('.card').addEventListener('click', function () {
+//   // Obtener los datos del producto
+//   const productData = {
+//     title: this.querySelector('.product-title').textContent,
+//     description: this.querySelector('.product-description').textContent,
+//     price: this.querySelector('.product-price').textContent,
+//     image: this.querySelector('img').src
+//   };
+
+//   // Codifica los datos del producto en un formato de cadena y redirige a detalles.html
+//   const productDataString = encodeURIComponent(JSON.stringify(productData));
+//   window.location.href = `pages/details.html?data=${productDataString}`;
+// });
+
+// Obtén una lista de todos los elementos con la clase 'card'
+const cards = document.querySelectorAll('.card');
+
+// Itera a través de todas las tarjetas y agrega un evento de clic a cada una
+cards.forEach(card => {
+  card.addEventListener('click', function () {
+    // Obtener los datos del producto específico
+    const productData = {
+      title: this.querySelector('.product-title').textContent,
+      description: this.querySelector('.product-description').textContent,
+      price: this.querySelector('.product-price').textContent,
+      image: this.querySelector('img').src
+    };
+
+    // Codificar los datos del producto en una cadena y redirigir a detalles.html
+    const productDataString = encodeURIComponent(JSON.stringify(productData));
+    window.location.href = `pages/details.html?data=${productDataString}`;
+  });
+});
+
+
+
+
