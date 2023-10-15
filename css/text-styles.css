@@ -59,6 +59,10 @@
   color: rgba(0, 34, 255, 0.857);
 }
 
+.super-margen {
+  margin: 135px auto;
+}
+
 /* @media screen and (max-width: 725px) {
   
 } */
