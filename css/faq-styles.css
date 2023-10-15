@@ -1,0 +1,29 @@
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 20px auto 100px;
+  padding: 30px;
+}
+
+.faq-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: var(--GrisTwo);
+}
+
+.faq-subtitle {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: var(--GrisTwo);
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--Gris);
+
+}
+.answer {
+  margin: 0 auto 20px 30px;
+}
