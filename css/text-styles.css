@@ -27,3 +27,38 @@
 .p-text {
   margin: 0 auto 20px 30px;
 }
+
+.marco-tabla {
+  border: 2px solid var(--GrisTwo);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
+  height: auto;
+  margin: 30px auto 30px 30px;
+}
+
+.table-text {
+  border-collapse: collapse;
+  width: 100%;
+  /* border: 2px solid var(--GrisTwo); */
+  /* border-radius: 10px;
+  margin-bottom: 20px; */
+}
+
+.th-text, .td-text {
+  /* border: 2px solid var(--GrisTwo); */
+  padding: 10px;
+  text-align: left;
+}
+
+.tr-text:nth-child(odd) {
+  background-color: var(--GrisClaro);
+}
+
+.td-text > strong {
+  color: rgba(0, 34, 255, 0.857);
+}
+
+/* @media screen and (max-width: 725px) {
+  
+} */

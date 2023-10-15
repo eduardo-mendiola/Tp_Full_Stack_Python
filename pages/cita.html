@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/cita-styles.css">
   <!-- JavaScript  -->
   <script src="../js/main.js" defer></script>
+  <script src="../js/login.js" defer></script>
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
@@ -217,43 +218,44 @@
               ¡Esperamos verte pronto!</p>
           </article>
 
-          <form class="appointment-form">
+          <form class="form-card">
             <div class="form-group">
-              <label for="nombre">Nombre Completo:</label>
-              <input type="text" id="nombre" name="nombre" required>
+              <label for="nombre" class="form-label">Nombre Completo:</label>
+              <input class="form-input" type="text" id="nombre" name="nombre" required>
             </div>
 
             <div class="form-group">
-              <label for="telefono">Teléfono de Contacto:</label>
-              <input type="tel" id="telefono" name="telefono" required>
+              <label for="telefono" class="form-label">Teléfono de Contacto:</label>
+              <input class="form-input" type="tel" id="telefono" name="telefono" required>
             </div>
 
             <div class="form-group">
-              <label for="email">Correo Electrónico:</label>
-              <input type="email" id="email" name="email" required>
+              <label for="email" class="form-label">Correo Electrónico:</label>
+              <input class="form-input" type="email" id="email" name="email" required>
             </div>
 
             <div class="form-group">
-              <label for="bicicleta">Modelo de Bicicleta:</label>
-              <input type="text" id="bicicleta" name="bicicleta" required>
+              <label for="bicicleta" class="form-label">Modelo de Bicicleta:</label>
+              <input class="form-input" type="text" id="bicicleta" name="bicicleta" required>
             </div>
 
             <div class="form-group">
-              <label for="descripcion">Descripción del Problema:</label>
-              <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+              <label for="descripcion" class="form-label">Descripción del Problema:</label>
+              <textarea class="form-input form-textarea" id="descripcion" name="descripcion" rows="4" required></textarea>
             </div>
 
             <div class="form-group">
-              <label for="fecha">Fecha Preferida:</label>
-              <input type="date" id="fecha" name="fecha" required>
+              <label for="fecha" class="form-label">Fecha Preferida:</label>
+              <input class="form-input" type="date" id="fecha" name="fecha" required>
             </div>
 
             <div class="form-group">
-              <label for="hora">Hora Preferida:</label>
-              <input type="time" id="hora" name="hora" required>
+              <label for="hora" class="form-label">Hora Preferida:</label>
+              <input class="form-input" type="time" id="hora" name="hora" required>
             </div>
 
-            <button type="submit" class="btn-submit">Enviar Solicitud de Cita</button>
+            <!-- se cambio a type button para que no envie el form -->
+            <button type="button" class="form-btn-submit" id="continueButton">Enviar Solicitud de Cita</button>
           </form>
         </section>
       </div>
@@ -279,7 +281,7 @@
         <h3 class="info__title">Servicios</h3>
         <ul class="info-list">
           <li class="info-list__li"><a class="info-list__link" href="./cita.html">Cita previa Taller</a></li>
-          <li class="info-list__li"><a class="info-list__link" href="./test.html">Test personalizado</a></li>
+          <li class="info-list__li"><a class="info-list__link" href="./size.html">Talla de bicicleta</a></li>
           <li class="info-list__li"><a class="info-list__link" href="./financiamiento.html">Financia tus compras</a>
           </li>
         </ul>

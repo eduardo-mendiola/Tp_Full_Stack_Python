@@ -1,3 +1,52 @@
-.appointment-form {
-  border: 2px solid fuchsia;
+.form-card {
+  width: 350px;
+  height: auto;
+  margin: 50px auto 100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-btn-submit {
+  margin: 20px 1px auto;
+  height: 35px;
+  box-shadow: 0 2px 8px 0 #00000033, 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  border: 1.5px solid var(--Alternativo2);
+  border-radius: 5px;
+  background-color: var(--Alternativo2);
+  color: var(--Blanco);
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  &:active {
+    border: 1.5px solid var(--Alternativo);
+    background-color: var(--Alternativo);
+  }
+}
+
+
+.form-label {
+  font-size: .8rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  margin-bottom: 25px;
+  height: 35px;
+  border: 1.5px solid var(--GrisClaro);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+
+.form-textarea {
+  height: 100px;
 }
