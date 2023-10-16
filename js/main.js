@@ -1,51 +1,47 @@
 //INICIO SUBMENU
-const elementosMenu = document.querySelectorAll('.menu-desktop__link');
-const elementosMenuBurger = document.querySelectorAll('.menu-burger__link');
-const opciones = document.querySelectorAll('.options');
+const elementosMenu = document.querySelectorAll(".menu-desktop__link");
+const elementosMenuBurger = document.querySelectorAll(".menu-burger__link");
+const opciones = document.querySelectorAll(".options");
 
 console.log(elementosMenuBurger);
 
 function mostrarOpciones(id) {
   opciones.forEach((opcion) => {
     if (opcion.id === id) {
-      opcion.style.display = 'flex';
+      opcion.style.display = "flex";
     } else {
-      opcion.style.display = 'none';
+      opcion.style.display = "none";
     }
   });
 }
 
 function ocultarOpciones() {
   opciones.forEach((opcion) => {
-    opcion.style.display = 'none';
+    opcion.style.display = "none";
   });
 }
 
-
 elementosMenu.forEach((elemento) => {
-  elemento.addEventListener('mouseover', (event) => {
-    const targetId = event.currentTarget.getAttribute('data-target');
+  elemento.addEventListener("mouseover", (event) => {
+    const targetId = event.currentTarget.getAttribute("data-target");
     mostrarOpciones(targetId);
   });
 });
 
 elementosMenuBurger.forEach((elemento) => {
-  elemento.addEventListener('click', (event) => {
-    const targetId = event.currentTarget.getAttribute('data-target');
+  elemento.addEventListener("click", (event) => {
+    const targetId = event.currentTarget.getAttribute("data-target");
     mostrarOpciones(targetId);
     console.log(targetId);
   });
 });
 
-
-
 opciones.forEach((opcion) => {
-  opcion.addEventListener('mouseleave', () => {
+  opcion.addEventListener("mouseleave", () => {
     ocultarOpciones();
   });
 });
 // FIN SUBMENU
-
 
 // INICIO MENU BURGER
 const smallScreen = document.getElementById("smallScreen");
@@ -55,7 +51,8 @@ const navBurger = document.getElementById("navBurger");
 const searchBarTwo = document.getElementById("search-bar-2");
 
 menuToggle.addEventListener("click", () => {
-    navBurger.style.display = navBurger.style.display === "flex" ? "none" : "flex";
+  navBurger.style.display =
+    navBurger.style.display === "flex" ? "none" : "flex";
 });
 
 // Lo mismo que mas arriba pero mas desarrollado
@@ -73,47 +70,45 @@ menuToggle.addEventListener("click", () => {
 // INICIO CAMBIO NAV
 
 function toggleMenu() {
-    if (window.innerWidth <= 926) {
-        // Si la pantalla es pequeña, muestra el menú hamburguesa y oculta el menú normal
-        largeScreen.style.display = "none";
-        smallScreen.style.display = "flex";
-    } else {
-        // Si la pantalla es grande, muestra el menú normal y oculta el menú hamburguesa
-        largeScreen.style.display = "flex";
-        smallScreen.style.display = "none";
-        navBurger.style.display = "none";
-        searchBarTwo.style.display = "none";
-        
-    }
+  if (window.innerWidth <= 926) {
+    // Si la pantalla es pequeña, muestra el menú hamburguesa y oculta el menú normal
+    largeScreen.style.display = "none";
+    smallScreen.style.display = "flex";
+  } else {
+    // Si la pantalla es grande, muestra el menú normal y oculta el menú hamburguesa
+    largeScreen.style.display = "flex";
+    smallScreen.style.display = "none";
+    navBurger.style.display = "none";
+    searchBarTwo.style.display = "none";
+  }
 }
 
 // Ejecuta la función al cargar la página y cuando cambia el tamaño de la ventana
 toggleMenu();
 window.addEventListener("resize", toggleMenu);
 
-
 // FIN CAMBIO NAV
-
 
 // INICIO DESPLAZAMIENTO LINKS
 
-const scrollLinks = document.querySelectorAll('.link-scroll');// href de los a del nav
+const scrollLinks = document.querySelectorAll(".link-scroll"); // href de los a del nav
 
 // const optionsMenu = document.getElementById(".options");
-scrollLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
+scrollLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const targetId = link.getAttribute('href').substring(1); // Obtengo la ID del objetivo sin el símbolo "#"
+    const targetId = link.getAttribute("href").substring(1); // Obtengo la ID del objetivo sin el símbolo "#"
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
       const offset = 120; // Ajusto esto según la altura de tu barra de navegación.
-      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - offset;
-      
+      const targetPosition =
+        targetElement.getBoundingClientRect().top + window.scrollY - offset;
+
       window.scrollTo({
         top: targetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
       navBurger.style.display = "none";
       ocultarOpciones();
@@ -121,10 +116,7 @@ scrollLinks.forEach(link => {
   });
 });
 
-
-
 // FIN DESPLAZAMIENTO LINKS
-
 
 // INICIO BARRA DE BUSQUEDA Opcion 1
 
@@ -172,26 +164,20 @@ scrollLinks.forEach(link => {
 
 // FIN BARRA DE BUSQUEDA opcion 2
 
-
-
-
-
-
-
-
-
-
 // INICIO BARRA DE BUSQUEDA Opcion 2
 
 // Agregar eventos para ambas barras de búsqueda
-document.getElementById("search-input-1").addEventListener("input", function() {
-  searchProducts(1); // Llama a la función de búsqueda para la primera barra
-});
+document
+  .getElementById("search-input-1")
+  .addEventListener("input", function () {
+    searchProducts(1); // Llama a la función de búsqueda para la primera barra
+  });
 
-document.getElementById("search-input-2").addEventListener("input", function() {
-  searchProducts(2); // Llama a la función de búsqueda para la segunda barra
-});
-
+document
+  .getElementById("search-input-2")
+  .addEventListener("input", function () {
+    searchProducts(2); // Llama a la función de búsqueda para la segunda barra
+  });
 
 function searchProducts(searchInputId) {
   // Obtiene el texto ingresado en la barra de búsqueda
@@ -207,11 +193,18 @@ function searchProducts(searchInputId) {
 
     let atLeastOneVisible = false;
 
-    productCards.forEach(function(card) {
-      let productTitle = card.querySelector(".product-title").textContent.toLowerCase();
-      let productDescription = card.querySelector(".product-description").textContent.toLowerCase();
+    productCards.forEach(function (card) {
+      let productTitle = card
+        .querySelector(".product-title")
+        .textContent.toLowerCase();
+      let productDescription = card
+        .querySelector(".product-description")
+        .textContent.toLowerCase();
 
-      if (productTitle.includes(searchTerm) || productDescription.includes(searchTerm)) {
+      if (
+        productTitle.includes(searchTerm) ||
+        productDescription.includes(searchTerm)
+      ) {
         card.style.display = "flex"; // Muestra el producto
         atLeastOneVisible = true;
       } else {
@@ -232,12 +225,6 @@ function searchProducts(searchInputId) {
 
 // FIN BARRA DE BUSQUEDA opcion 2
 
-
-
-
-
-
-
 // INICIO BARRA DE BUSQUEDA PANTALLAS PEQUENAS
 
 // Elementos del DOM
@@ -245,7 +232,6 @@ const searchIcon = document.getElementById("searchIcon");
 const searchInput = document.getElementById("search-bar-2");
 const searchClose = document.getElementById("searchClose");
 const searchTerm = document.getElementById("searchTerm");
-
 
 // Evento de clic en el ícono de búsqueda
 searchIcon.addEventListener("click", function () {
@@ -266,26 +252,22 @@ searchIcon.addEventListener("click", function () {
   searchTerm.focus();
 });
 
-
 // FIN BARRA DE BUSQUEDA PANTALLAS PEQUENAS
-
-
-
 
 // INICIO DE SELECCION DE PRODUCTO PARA COMPRA
 
 // Obtén una lista de todos los elementos con la clase 'card'
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll(".card");
 
 // Itera a través de todas las tarjetas y agrega un evento de clic a cada una
-cards.forEach(card => {
-  card.addEventListener('click', function () {
+cards.forEach((card) => {
+  card.addEventListener("click", function () {
     // Obtener los datos del producto específico
     const productData = {
-      title: this.querySelector('.product-title').textContent,
-      description: this.querySelector('.product-description').textContent,
-      price: this.querySelector('.product-price').textContent,
-      image: this.querySelector('img').src
+      title: this.querySelector(".product-title").textContent,
+      description: this.querySelector(".product-description").textContent,
+      price: this.querySelector(".product-price").textContent,
+      image: this.querySelector("img").src,
     };
 
     // Codificar los datos del producto en una cadena y redirigir a detalles.html
@@ -296,4 +278,21 @@ cards.forEach(card => {
 
 // FIN DE SELECCION DE PRODUCTO PARA COMPRA
 
+// INICIO API
+traerDatosAPI();
+traerDatosAPI();
+traerDatosAPI();
 
+function traerDatosAPI() {
+  fetch("https://randomuser.me/api")
+    .then((datos) => datos.json())
+    .then((datos) => {
+      contenidoApi.innerHTML += `
+                    <div class="tarjeta-api">                              
+                        <img src="${datos.results[0].picture.large}"</img><br><br>
+                        
+                        ${datos.results[0].name.last}, ${datos.results[0].name.first}
+                    </div>`;
+    });
+}
+// FIN API
