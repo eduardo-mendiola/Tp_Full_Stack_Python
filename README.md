@@ -29,7 +29,7 @@ La tienda en línea de biciTienda tiene como público objetivo a una amplia gama
           -  Bicicletas (Montaña, Urbanas, eBikes, Niños)
 - **Body**
      - Catalogo de bicicletas
-
+     - Api https://randomuser.me/api
 - **Footer**
       - Información general
             - Ayuda

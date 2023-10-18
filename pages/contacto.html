@@ -7,7 +7,6 @@
   <title>Tienda de Bicicletas</title>
   <!-- Css -->
   <link rel="stylesheet" href="../css/general-styles.css">
-  <link rel="stylesheet" href="../css/login-styles.css">
   <link rel="stylesheet" href="../css/contacto-styles.css">
   <!-- JavaScript  -->
   <script src="../js/main.js" defer></script>
@@ -60,6 +59,8 @@
           <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="used">USADAS</a></li>
           <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="outlet">OUTLET</a></li>
           <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="services">SERVICIOS</a>
+          </li>
+          <li class="menu-desktop__item"><a href="#" class="menu-desktop__link" data-target="contactos">CONTACTOS</a>
           </li>
         </ul>
       </nav>
@@ -114,7 +115,7 @@
         <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="used">USADAS</a></li>
         <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="outlet">OUTLET</a></li>
         <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="services">SERVICIOS</a></li>
-        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="contactos">CONTANTOS</a></li>
+        <li class="menu-burger__item"><a href="#" class="menu-burger__link" data-target="contactos">CONTACTOS</a></li>
       </ul>
     </nav>
     <!-- Fin de pantalla pequeña -->
@@ -174,10 +175,9 @@
       <h2 class="options-h2">CONTACTOS</h2>
       <ul class="options-menu options-menu--bicicletas">
         <li class="options__item"><a href="./stores.html" class="options__link">Nuestras Tiendas</a></li>
-        <li class="options__item"><a href="#footer" class="options__link link-scroll">Servicios Turnos</a></li>
-        <li class="options__item"><a href="#footer" class="options__link link-scroll">Sobre biciTienda</a></li>
-        <li class="options__item"><a href="#footer" class="options__link link-scroll">Redes Sociales</a></li>
-        <li class="options__item"><a href="#footer" class="options__link link-scroll">Teléfonos y mails</a></li>
+        <li class="options__item"><a href="../pages/cita.html" class="options__link">Servicios Turnos</a></li>
+        <li class="options__item"><a href="#footer" class="options__link link-scroll">Ayuda</a></li>
+        <li class="options__item"><a href="../pages/contacto.html" class="options__link">Contacta con Nosotros</a></li>
       </ul>
     </div>
   </header>
@@ -188,12 +188,8 @@
 
   <main class="main">
 
-    <div class="message" style="text-align: center; margin: 100px auto;">
-      <h2 style="color: dimgrey; margin-bottom: 20px;">En este momento no podemos procesar la operación.</h2>
-      <h3>Continúa buscando tu futura bici, en biciTienda.</h3>
-    </div>
 
-    <div class="form-contacto">
+    <div class="container-contacto">
       <h2 style="text-align: center; margin-top: 20px;">FORMULARIO DE CONSULTA</h2>
 
 
@@ -220,7 +216,7 @@
             </div>
         </fieldset>
     
-        <h4 style="background-color: gray; opacity: 0.8; padding: 10px;">Escribinos tu consulta</h4>
+        <h3 style="background-color: gray; opacity: 0.8; padding: 10px;">Escribinos tu consulta</h3>
 
         <br>
         <fieldset>
@@ -232,7 +228,7 @@
             <label for="promo">Acepto recibir ofertas y promociones por correo</label>
         </div>        
         <br>
-        <div id="mensajeError" style="color: red;"></div>
+        <div id="mensajeError" style="color: red; margin-left: 20px;"></div>
         <br>
         <input type="button" value="Enviar consulta" onclick="validarConsulta()">
     </form>    
