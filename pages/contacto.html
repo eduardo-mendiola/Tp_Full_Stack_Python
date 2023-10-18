@@ -8,9 +8,11 @@
   <!-- Css -->
   <link rel="stylesheet" href="../css/general-styles.css">
   <link rel="stylesheet" href="../css/login-styles.css">
+  <link rel="stylesheet" href="../css/contacto-styles.css">
   <!-- JavaScript  -->
   <script src="../js/main.js" defer></script>
   <script src="../js/login.js" defer></script>
+  <script src="../js/consulta.js" defer></script>
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
@@ -191,9 +193,69 @@
       <h3>Continúa buscando tu futura bici, en biciTienda.</h3>
     </div>
 
+    <div class="form-contacto">
+      <h2 style="text-align: center; margin-top: 20px;">FORMULARIO DE CONSULTA</h2>
+
+
+    <br>
+    <br>
+
+    <h3 style="background-color: gray; opacity: 0.8; padding: 10px;">Dejanos tus datos para poder contactarte</h3>
+
+    <br>
+    <form action="enviarConsulta" target="_blank">
+        <fieldset>
+            <div class="input-container">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            
+            <div class="input-container">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input-container">
+                <label for="confirmarEmail">Confirme su correo electrónico</label>
+                <input type="email" name="confirmarEmail" id="confirmarEmail">
+            </div>
+        </fieldset>
+    
+        <h4 style="background-color: gray; opacity: 0.8; padding: 10px;">Escribinos tu consulta</h4>
+
+        <br>
+        <fieldset>
+            <textarea name="consulta" id="consul" cols="40" rows="15"></textarea>
+        </fieldset>
+    
+        <div class="checkbox-container">
+            <input type="checkbox" name="acepto" id="promo">
+            <label for="promo">Acepto recibir ofertas y promociones por correo</label>
+        </div>        
+        <br>
+        <div id="mensajeError" style="color: red;"></div>
+        <br>
+        <input type="button" value="Enviar consulta" onclick="validarConsulta()">
+    </form>    
+   
+
+    <h2>También podés encontrarnos en</h2>
+    <div class="redes-sociales">
+        <a href="http://facebok.com" target="_blank">
+            <img src="../img/icons/face.png" alt="Facebook">
+        </a>
+        <a href="http://instagram.com" target="_blank">
+            <img src="../img/icons/insta.png" alt="Instagram">
+        </a>
+        <a href="http://whatsappweb.com" target="_blank">
+            <img src="../img/icons/wsp.png" alt="Whatsapp">
+        </a>
+    </div>
+  
+    </div>
+
+
+
   </main>
-
-
 
 
 <!-- ----------------------------------------------------- FIN MAIN ------------------------------------- -->
