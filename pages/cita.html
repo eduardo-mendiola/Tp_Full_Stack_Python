@@ -219,7 +219,7 @@
               ¡Esperamos verte pronto!</p>
           </article>
 
-          <form class="form-card">
+          <form class="form-card" action="https://formspree.io/f/meqbvwoo" method="post">
             <div class="form-group">
               <label for="nombre" class="form-label">Nombre Completo:</label>
               <input class="form-input" type="text" id="nombre" name="nombre" required>
@@ -232,8 +232,9 @@
 
             <div class="form-group">
               <label for="email" class="form-label">Correo Electrónico:</label>
-              <input class="form-input" type="email" id="email" name="email" required>
+              <input class="form-input" type="email" id="email" name="email" required onkeyup="validarUserEmail('email')">
             </div>
+            <div id="mensaje"></div>
 
             <div class="form-group">
               <label for="bicicleta" class="form-label">Modelo de Bicicleta:</label>
@@ -246,17 +247,34 @@
             </div>
 
             <div class="form-group">
-              <label for="fecha" class="form-label">Fecha Preferida:</label>
+              <label for="fecha" class="form-label">Fecha Preferida (Lunes a Sábado):</label>
               <input class="form-input" type="date" id="fecha" name="fecha" required>
             </div>
+            
+            
+            
 
             <div class="form-group">
-              <label for="hora" class="form-label">Hora Preferida:</label>
-              <input class="form-input" type="time" id="hora" name="hora" required>
+              <label for="hora" class="form-label">Hora Preferida (9:00 - 17:00):</label>
+              <input class="form-input" type="time" id="hora" name="hora" required list="listalimitestiempo" value="09:00">
+              <datalist id="listalimitestiempo">
+                <option value="09:00">
+                <option value="10:00">
+                <option value="11:00">
+                <option value="12:00">
+                <option value="13:00">
+                <option value="14:00">
+                <option value="15:00">
+                <option value="16:00">
+                <option value="17:00">
+              </datalist>
             </div>
+            
+            
+            
 
             <!-- se cambio a type button para que no envie el form -->
-            <button type="button" class="form-btn-submit" id="continueButton">Enviar Solicitud de Cita</button>
+            <button disabled type="submit" class="btn-disabled continueButton" id="form-btn">Enviar Solicitud de Cita</button>
           </form>
         </section>
       </div>

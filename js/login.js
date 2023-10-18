@@ -1,21 +1,58 @@
-// valida que el usuario tenga un @ 
-function validarUser() {
+function validarUserEmail(type) {
   console.log("ingreso a validarUser")
   
-  //obtendo lo que ingreso el usuario en el input luego lo pongo en la variable user
-  let user=document.getElementById("user").value 
+  //obtendo lo que ingreso el usuario en el input luego lo pongo en la variable userEmail
+  let userEmail 
 
-  if (!user.includes("@")) {
-      document.getElementById("mensaje").innerHTML="El usuario debe contener un @"
+  if (type == "user") {
+    mensaje = "El usuario debe contener un @"
+    userEmail = document.getElementById("user").value  
+    if (!userEmail.includes("@")) {
+      document.getElementById("mensaje").innerHTML= mensaje
       document.getElementById("mensaje").className="mensaje-login"
       document.getElementById("continueButton").disabled="disabled"
       document.getElementById("continueButton").className="btn-disabled"
-  } else {
+    } else {
+        document.getElementById("mensaje").innerHTML=""
+        document.getElementById("mensaje").className=""
+        document.getElementById("continueButton").disabled="disabled"
+    }
+  } else if (type == "email") {
+    mensaje = "El email debe contener un @"
+    userEmail = document.getElementById("email").value
+    if (!userEmail.includes("@")) {
+      document.getElementById("mensaje").innerHTML= mensaje
+      document.getElementById("mensaje").className="mensaje-login"
+      document.getElementById("form-btn").disabled="disabled"
+      document.getElementById("form-btn").className="btn-disabled"
+    } else {
       document.getElementById("mensaje").innerHTML=""
       document.getElementById("mensaje").className=""
-      document.getElementById("continueButton").disabled="disabled"
+      document.getElementById("form-btn").disabled=""
+      document.getElementById("form-btn").className="form-btn-submit"
+    }
   }
 }
+
+
+// valida que el usuario tenga un @ 
+// function validarUser() {
+//   console.log("ingreso a validarUser")
+  
+//   //obtendo lo que ingreso el usuario en el input luego lo pongo en la variable user
+//   let user=document.getElementById("user").value 
+
+//   if (!user.includes("@")) {
+//       document.getElementById("mensaje").innerHTML="El usuario debe contener un @"
+//       document.getElementById("mensaje").className="mensaje-login"
+//       document.getElementById("continueButton").disabled="disabled"
+//       document.getElementById("continueButton").className="btn-disabled"
+//   } else {
+//       document.getElementById("mensaje").innerHTML=""
+//       document.getElementById("mensaje").className=""
+//       document.getElementById("continueButton").disabled="disabled"
+//   }
+// }
 
 
 function validarPass() {
@@ -65,8 +102,6 @@ function ocultarPass() {
 document.getElementById("continueButton").addEventListener("click", function() {
   window.location.href = "./message.html";
 });
-
-
 
 
 

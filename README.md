@@ -109,6 +109,8 @@ Creación de contenido: 1 semanas
 
 **Iframe:** de Google Maps para mostrar la ubicación en la página de contacto.
 
+**formspree:** Para formularios de contacto y cita técnica.
+
 **Google Fonts:** para la obtención de fuentes.
 
 **Fontawesome.com:** para la descarga de iconos en svg.
@@ -119,11 +121,19 @@ Creación de contenido: 1 semanas
 
 **Base de datos:** Agregar una base de datos para el manejo de productos y clientes.
 
+**Utilización de framework:** La utilización de un framework como Vue o Angular mejoran la funcionalidad del código y su mantenimiento en el futuro.
+
+**Refactorización del código:** Se podría simplificar el código replanteando ciertas funciones en js que son muy similares, también hay repetición de código html y css que se podría unificar.
+
+**Mejora de verificaciones en el frontend:** Mejorar el código de JavaScript para las diferentes verificaciones, contacto, cita técnica, login y creación de cuenta.
+
+**Mejoras en calendario de citas:** Contar con una agenda para la selección de turnos disponibles.
+
 **Integración con Plataformas de Pago:** Permitir pagos en línea para servicios o productos directamente desde el sitio.
 
 **Aumentar catálogo de productos:** Aumentar el catálogo de productos y servicios.
 
-**Chatbot:** usar un chatbot para preguntas y respuestas frecuentes.
+**Chatbot:** Usar un chatbot para preguntas y respuestas frecuentes.
 
 ### **10. Contacto:**
 

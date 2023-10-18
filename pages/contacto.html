@@ -199,7 +199,8 @@
     <h3 style="background-color: gray; opacity: 0.8; padding: 10px;">Dejanos tus datos para poder contactarte</h3>
 
     <br>
-    <form action="enviarConsulta" target="_blank">
+    <form  action="https://formspree.io/f/mzblyqzb"
+    method="POST"">
         <fieldset>
             <div class="input-container">
                 <label for="nombre">Nombre</label>
@@ -230,7 +231,7 @@
         <br>
         <div id="mensajeError" style="color: red; margin-left: 20px;"></div>
         <br>
-        <input type="button" value="Enviar consulta" onclick="validarConsulta()">
+        <button type="submit" onclick="validarConsulta()">Enviar consulta</button>
     </form>    
    
 
