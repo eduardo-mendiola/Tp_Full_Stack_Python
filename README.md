@@ -24,7 +24,8 @@ La tienda en línea de biciTienda tiene como público objetivo a una amplia gama
 #### **Página de inicio**
 - **Header**
      - Barra de búsqueda
-     - Login
+     - Ingreso
+       - Registro
      - Menu desplegable con opciones 
           -  Bicicletas (Montaña, Urbanas, eBikes, Niños)
 - **Body**
@@ -40,6 +41,12 @@ La tienda en línea de biciTienda tiene como público objetivo a una amplia gama
 	 - Legales
 
 #### **Páginas vinculadas**
+
+- **Ingresar**
+     - Login para usuarios de la página.
+
+- **Registro**
+     - Creación de cuenta para usuarios de la página.
 
 - **Compra**
      - Al seleccionar un producto se redirige a una página de compra online.
@@ -84,19 +91,19 @@ Login, búsqueda de productos, selección y compra, formulario de contacto, form
 **Equipo:** 
 	
 **Antonella Menna** ( antonela.noeli@gmail.com ):
-Formularios (Representante y enlace con el Instructor).
+Diseño, formularios (Representante y enlace con el Instructor).
 
 **Maylin G. Graterol La Cruz** ( maylin.g.lacruz@gmail.com ):
-Catálogo, búsqueda y selección de imágenes y animación.
+Diseño, catálogo, búsqueda y selección de imágenes y animación.
 
 **Eduardo E. Mendiola** ( ezequielmz@gmail.com ): 
-Diseño, menú de navegación y búsqueda, login y compilado.
+Diseño, menú de navegación y búsqueda, login, sing-up y compilado.
 
 **Silvana Cicchitti** ( cicchittisilvana1986@gmail.com ): 
-Implementación Api.
+Diseño, implementación Api.
 
 **Jerónimo Prado** ( jeronimoprado0@gmail.com ): 
-Implementación Api.
+Diseño, implementación Api.
 
 ### **7. Cronograma Tentativo:**
 

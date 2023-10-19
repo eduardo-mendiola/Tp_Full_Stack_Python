@@ -9,6 +9,6 @@ function validarConsulta() {
     } else if (correo !== confirmarCorreo) {
         mensajeError.textContent = "Las direcciones de correo electrónico no coinciden";
     } else {
-        alert("Formulario enviado con éxito");
+        //alert("Formulario enviado con éxito");
     }
 }

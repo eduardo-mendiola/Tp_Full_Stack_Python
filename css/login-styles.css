@@ -46,6 +46,7 @@
   display: flex;  
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .eye-fill {
@@ -105,7 +106,7 @@
 }
 
 .login-in {
-  margin: 30px 1px auto;
+  margin: 25px 1px auto;
   height: 35px;
   box-shadow: 0 2px 8px 0 #00000033, 0 2px 5px 0 rgba(0, 0, 0, 0.3);
   border: 1.5px solid var(--Alternativo2);
@@ -122,7 +123,7 @@
 }
 
 .btn-disabled {
-  margin: 30px 1px auto;
+  margin: 25px 1px auto;
   height: 35px;
   box-shadow: 0 2px 8px 0 #00000033, 0 2px 5px 0 rgba(0, 0, 0, 0.3);
   border: 1.5px solid var(--Alternativo2);
@@ -174,4 +175,8 @@
 .sing-up {
   font-size: .8rem;
   font-weight: 500;
+}
+
+.passConf {
+  margin-bottom: 0;
 }

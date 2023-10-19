@@ -188,31 +188,37 @@
   <main class="main">
 
     <div class="container-login">
-      <h2 class="login__title">Ingresar</h2>
+      <h2 class="login__title">Registro</h2>
       <form action="" class="login__form">
         <label for="user" class="login__label">Usuario</label>
-        <input type="email" name="user" id="user" class="login__input" onkeyup="validarUserEmail('user', 'continueButtonLogin', 'mensaje-login')" required>
+        <input type="email" name="userSingUp" id="user" class="login__input" onkeyup="validarUserEmail('userSingUp', 'contButtonSingUp', 'mensajeSingUp')" required>
 
-        <label for="pass" class="login__label">Contraseña</label>
+
+        <label for="passNew" class="login__label">Contraseña</label>
         <div class="login-pass">
-          <input type="password" name="pass" id="passLogin" class="login__input login__input--pass pass" onkeyup="validarPass('passLogin', 'continueButtonLogin', 'mensaje-login')" required>
+          <input type="password" name="passNew" class="login__input login__input--pass pass" id="passNew" onkeyup="validarPass('passNew', 'contButtonSingUp', 'mensajeSingUp')">
           <span class="input-group-text" id="basic-addon1">
             <a href="#">
-                <img src="../img/icons/eye-slash-solid.svg" class="eye-fill icon-eye" id="icon-eye" onclick="mostrarPass(0)"></img>
+                <img src="../img/icons/eye-slash-solid.svg" class="eye-fill icon-eye"  onclick="mostrarPass(0)"></img>
             </a>
         </span>
         </div>
 
-        <div class="container-remember">
-          <input type="checkbox" class="remember" id="remember">
-          <label for="remember" class="login__label login__label--check">Recordar usuario</label>
+        <label for="passConf" class="login__label">Confirme Contraseña</label>
+        <div class="login-pass passConf">
+          <input type="password" name="passConf" class="login__input login__input--pass pass" id="passConf" onkeyup="compararPass('passNew', 'passConf', 'mensajeSingUp', 'contButtonSingUp')">
+          <span class="input-group-text" id="basic-addon1">
+            <a href="#">
+                <img src="../img/icons/eye-slash-solid.svg" class="eye-fill icon-eye"  onclick="mostrarPass(1)"></img>
+            </a>
+        </span>
         </div>
+        
 
         <!-- mensaje desde js alert -->
-        <div id="mensaje-login"></div>
+        <div id="mensajeSingUp"></div>
         <!-- se cambio a type button para que no envie el form -->
-        <button disabled type="button" class="btn-disabled" id="continueButtonLogin" onclick="errorPage()">Continuar</button>
-        <a href="./message.html" class="forgot">Olvidaste tu contraseña?</a>
+        <button disabled type="button" class="btn-disabled" id="contButtonSingUp" onclick="errorPage()">Continuar</button>
       </form>
 
       <!-- Inicio de linea separadora -->
@@ -246,8 +252,6 @@
           </li>
         </ul>
       </div>
-      <!-- Fin de login alternativo -->
-      <span class="sing-up">No tienes una cuenta? <a href="./singUp.html" class="sing-up__link">Crea una!</a> </span>
     </div>
 
     
