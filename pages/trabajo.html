@@ -213,35 +213,17 @@
             <h3 class="h3-text">¿Qué se espera de un candidato exitoso?</h3>
             <p class="p-text">Buscamos candidatos que compartan nuestra pasión por las bicicletas y que tengan habilidades como el servicio al cliente, el trabajo en equipo y la atención a los detalles. La experiencia en la industria de bicicletas es una ventaja, pero no esencial. Valoramos la actitud positiva y el deseo de aprender.</p>
         </article>
+      
+
+        <form class="cv-card">
+          <label for="cv" class="cv-label">Envianos tu CV:</label>
+          <label for="cv" class="upload-file">
+            <span class="upload-btn">Cargar CV (PDF)</span>
+            <input type="file" id="cv" name="cv" accept=".pdf" class="cv-input" required onchange="updateFileName(this)">
+          </label>
+          <button disabled type="button" class="cv-btn-disabled" id="submitBtn" onclick="sendCv()">Enviar CV</button>
+        </form>   
       </section>
-
-      <!-- <form class="cv-card">
-        <label for="cv" class="cv-label">Envianos tu CV:</label>
-        <input type="file" id="cv" name="cv" accept=".pdf" class="cv-input" required>
-        <button type="button" class="cv-btn-submit" onclick="sendCv()">Enviar CV</button>
-      </form> -->
-      
-      
-      <!-- <form class="cv-card">
-        <label for="cv" class="cv-label">Envianos tu CV:</label>
-        <label for="cv" class="upload-file">
-          <span class="upload-btn">Cargar CV (PDF)</span>
-          <input type="file" id="cv" name="cv" accept=".pdf" class="cv-input" required onchange="updateFileName(this)">
-        </label>
-        <button disabled="disabled" type="button" class="cv-btn-disabled" onclick="sendCv()">Enviar CV</button>
-      </form> -->
-
-      <form class="cv-card">
-        <label for="cv" class="cv-label">Envianos tu CV:</label>
-        <label for="cv" class="upload-file">
-          <span class="upload-btn">Cargar CV (PDF)</span>
-          <input type="file" id="cv" name="cv" accept=".pdf" class="cv-input" required onchange="updateFileName(this)">
-        </label>
-        <button disabled type="button" class="cv-btn-disabled" id="submitBtn" onclick="sendCv()">Enviar CV</button>
-      </form>
-      
-      
-    
     </div>
 
   </main>
