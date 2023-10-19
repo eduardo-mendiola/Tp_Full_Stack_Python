@@ -41,13 +41,9 @@
 .table-text {
   border-collapse: collapse;
   width: 100%;
-  /* border: 2px solid var(--GrisTwo); */
-  /* border-radius: 10px;
-  margin-bottom: 20px; */
 }
 
 .th-text, .td-text {
-  /* border: 2px solid var(--GrisTwo); */
   padding: 10px;
   text-align: left;
 }

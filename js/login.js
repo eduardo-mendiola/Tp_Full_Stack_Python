@@ -139,11 +139,34 @@ function compararPass(idPassNew, idPassConf, idMenaje, btn) {
 
 // Redirigir a la página de error (message.html)
 
-// function errorPage() {
-//   window.location.href = "./message.html";
-// }
-
 const errorPage = () => {
   window.location.href = "./message.html";
 };
  // Fin Redirigir a la página de error (message.html)
+
+
+// Envio de cv
+ 
+
+function updateFileName(input) {
+  const fileInput = document.getElementById("cv");
+  const fileName = fileInput.files[0].name;
+  const button = document.getElementById("submitBtn"); 
+  const inputCv = document.querySelector(".upload-file .upload-btn");
+
+  if (fileName) {
+    inputCv.textContent = fileName;
+    button.className = "cv-btn-submit"; 
+    button.disabled = ""; 
+  } else {
+    inputCv.textContent = "Cargar CV (PDF)";
+    button.classList = "cv-btn-disabled"; 
+    button.disabled = "disabled"; 
+  }
+}
+
+const sendCv = () => {
+  window.location.href = "./cv-send.html";
+};
+  
+// Fin de envio de cv

@@ -35,7 +35,7 @@ La tienda en línea de biciTienda tiene como público objetivo a una amplia gama
       - Información general
             - Ayuda
             - Servicios
-            - Sobre nosotros
+            - Sobre biciTienda
             - Redes sociales
 	 - Contacto
 	 - Legales
@@ -56,6 +56,9 @@ La tienda en línea de biciTienda tiene como público objetivo a una amplia gama
 
 - **Contacto**
       - Formulario para contacto con la empresa.
+
+- **Trabaja con nosotros**
+      - Formulario para envío de cv en formato pdf.
 
 - **Ubicación**
      - Según la ciudad muestra un iframe de google maps.
@@ -84,14 +87,14 @@ Montserrat, Sans-serif, con tres pesos diferentes para una legibilidad óptima.
 Imágenes de productos, precios, categoría de productos, textos informativos, mapas.
 
 **Funcionalidades:** 
-Login, búsqueda de productos, selección y compra, formulario de contacto, formulario de citas con fecha y hora, iframe de google maps, menú desplegable, menú tipo hamburguesa y medias queries para adaptarse a diferentes dispositivos.
+Login, registro, búsqueda de productos, selección y compra, formulario de contacto, formulario de citas con fecha y hora,  envío de pdf, iframe de google maps, menú desplegable, menú tipo hamburguesa y medias queries para adaptarse a diferentes dispositivos.
 
 ### **6. Integrantes del Equipo y Representante:**
 
 **Equipo:** 
 	
-**Antonella Menna** ( antonela.noeli@gmail.com ):
-Diseño, formularios (Representante y enlace con el Instructor).
+**Antonela Menna** ( antonela.noeli@gmail.com ):
+Diseño, formularios **(Representante y enlace con el Instructor)**.
 
 **Maylin G. Graterol La Cruz** ( maylin.g.lacruz@gmail.com ):
 Diseño, catálogo, búsqueda y selección de imágenes y animación.
@@ -108,8 +111,8 @@ Diseño, implementación Api.
 ### **7. Cronograma Tentativo:**
 
 **Diseño y planificación:** 2 semana
-Desarrollo y programación: 4 semanas
-Creación de contenido: 1 semanas
+**Desarrollo y programación:** 4 semanas
+**Creación de contenido:** 1 semanas
 
 
 ### **8. Recursos Externos:**
@@ -144,7 +147,7 @@ Creación de contenido: 1 semanas
 
 ### **10. Contacto:**
 
-**Email del Representante:** **antonela.noeli@gmail.com** (Antonella Menna).
+**Email del Representante:** **antonela.noeli@gmail.com** (Antonela Menna).
 
 ### **11. Fecha de Entrega:**
 
