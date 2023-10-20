@@ -100,13 +100,17 @@ Diseño, formularios **(Representante y enlace con el Instructor)**.
 Diseño, catálogo, búsqueda y selección de imágenes y animación.
 
 **Eduardo E. Mendiola** ( ezequielmz@gmail.com ): 
-Diseño, menú de navegación y búsqueda, login, sing-up, iframe y compilado.
+Diseño, menú de navegación y búsqueda, login, sing-up, iframe.
 
 **Silvana Cicchitti** ( cicchittisilvana1986@gmail.com ): 
 Diseño, implementación Api.
 
 **Jerónimo Prado** ( jeronimoprado0@gmail.com ): 
 Diseño, implementación Api.
+
+**Mario Caraballo** ( mariojcaraballom@gmail.com ): 
+Diseño.
+
 
 ### **7. Cronograma Tentativo:**
 
